@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "outDir": "dist/",
+        "target": "es2016",
+        "noLib": false,
+        "lib": ["es2015.promise", "es2015", "es2016", "es6", "dom"],
+
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "types": [ "node" ],
+        "jsx": "react",
+        
+        "allowSyntheticDefaultImports": true,
+
+        "strict": true,
+        "noUnusedLocals": true,
+        "noImplicitAny": true,
+
+        "sourceMap": true,
+        "removeComments": true,
+
+        "allowJs": true,
+        "resolveJsonModule": true,
+        "declaration": false,
+        "preserveConstEnums": true
+    },
+    "include": [
+        "src/**/*",
+        "typings/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
