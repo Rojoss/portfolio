@@ -13,6 +13,7 @@ module.exports = new Config().merge({
 
     node: {
         __dirname: true,
+        fs: 'empty'
     },
 
     resolve: {
