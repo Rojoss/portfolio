@@ -3,10 +3,9 @@ export const DIR = process.cwd();
 require('dotenv/config');
 
 import { LogService, setLogService, ReleaseStage } from './core/logger/Logger';
+import { renderReact } from './react/ReactMain';
 const logService = new LogService();
 setLogService(DIR, logService, ReleaseStage[process.env.SENTRY_LOGGER_STAGE as keyof typeof ReleaseStage]);
 
 console.info(`Portfolio from Jos Roossien`);
-
-
-logService.captureMessage('Hello');
+renderReact();

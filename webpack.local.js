@@ -33,7 +33,7 @@ module.exports = new Config().extend('webpack.base.js').merge({
         pathinfo: false,
         publicPath: '/',
         path: path.resolve(__dirname, '../dist'),
-        filename: 'whattoeat.[hash].js'
+        filename: 'portfolio.[hash].js'
     },
 
     optimization: {
